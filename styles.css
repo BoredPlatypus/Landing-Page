@@ -2,17 +2,122 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
+
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: Roboto;
 }
+
 .header{    
     background-color: #1F2937;
-    height: 300px;
+    height: 400px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 50px;
 }
+
+.header-one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+}
+
+.header-logo{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+a:link{
+    color: #E5E7EB;
+    text-decoration: none;
+}
+
+.header-two{
+    display: flex;
+    flex: 1;
+}
+
+.links{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.hero-text-one{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.container img{
+    width:600px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* This the second part of the webbpage with the four cards */
+
+.content-one{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    gap: 30px;
+}
+
+.content-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.content-cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    flex-wrap: wrap;
+}
+
+.blankcard{
+    border: 2px solid #3882F6;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+}
+
+/* This is the footer i.e the very bottom of the page */
+
 .footer{
     background-color: #1F2937;
 }
