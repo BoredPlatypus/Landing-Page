@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto;
 }
-
+img{
+    display: block;
+}
 body{
     min-height: 100vh;
     display: flex;
@@ -74,7 +78,7 @@ a:link{
     object-fit: cover;
 }
 
-/* This the second part of the webbpage with the four cards */
+/* This the second part of the webpage with the four cards */
 
 .content-one{
     display: flex;
@@ -114,6 +118,28 @@ a:link{
     border-radius: 15px;
     width: 150px;
     height: 150px;
+}
+
+.quote-section{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    background-color: #E5E7EB;
+    justify-content: center;
+    align-items: center;
+    padding-left: 400px;
+    padding-right: 400px;
+}
+.quote{
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+
+}
+.quoter{
+    margin-left: 450px;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 /* This is the footer i.e the very bottom of the page */
