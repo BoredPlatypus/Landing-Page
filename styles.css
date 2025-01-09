@@ -120,6 +120,7 @@ a:link{
     height: 150px;
 }
 
+/* Here is the section with the quotes*/
 .quote-section{
     display: flex;
     flex-direction: column;
@@ -142,6 +143,49 @@ a:link{
     font-size: 20px;
 }
 
+/* This is the signup portion of the page */
+.signup{
+    height: 400px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-box{
+    display: flex;
+    height: 200px;
+    width: 900px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #3882F6;
+    color:#F9FAF8;
+    border-radius: 20px;
+
+
+}
+
+.large-text{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.small-text{
+    font-size: 18px;
+}
+
+button{
+    background-color: #3882F6;
+    font-size: 20px;
+    color:#F9FAF8;
+    padding: 10px 20px 10px;
+    border: none;
+    border-radius: 15px; 
+}
+
+button.white-border{
+    align-self: center;
+    border: 2px solid #F9FAF8;
+}
 /* This is the footer i.e the very bottom of the page */
 
 .footer{
