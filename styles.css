@@ -6,13 +6,12 @@
     box-sizing: border-box;
     font-family: Roboto;
 }
-img{
-    display: block;
-}
+
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    gap:10px;
 }
 
 .header{    
@@ -24,12 +23,15 @@ body{
     flex-direction: column;
     padding-top: 20px;
     gap: 50px;
+    min-height: 0;
+    flex: 1;
 }
 
 .header-one{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 ul{
@@ -41,6 +43,7 @@ ul{
 .header-logo{
     font-size: 24px;
     color: #F9FAF8;
+    font-weight: 500;
 }
 
 a:link{
@@ -50,7 +53,8 @@ a:link{
 
 .header-two{
     display: flex;
-    flex: 1;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .links{
@@ -63,6 +67,10 @@ a:link{
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+    gap: 20px;
+    min-width: 200px;
+    max-width: 600px;
+    flex: 1 1 200px;
 
 }
 
@@ -72,10 +80,17 @@ a:link{
     font-weight: 900;
 }
 
+.hero-text-two{
+    color: #F9FAF8;
+    font-size: 20px;
+}
 .container img{
     width:600px;
-    height: 200px;
-    object-fit: cover;
+    height: 300px;
+    object-fit: contain;
+    flex: auto;
+    padding-bottom: 20px;
+    object-position: right;
 }
 
 /* This the second part of the webpage with the four cards */
@@ -85,6 +100,7 @@ a:link{
     flex-direction: column;
     height: 400px;
     gap: 30px;
+    flex: 1;
 }
 
 .content-header{
@@ -103,14 +119,13 @@ a:link{
     justify-content: center;
     align-items: center;
     gap: 50px;
-
+    flex-wrap: wrap;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     width: 150px;
-    flex-wrap: wrap;
 }
 
 .blankcard{
@@ -121,24 +136,34 @@ a:link{
 }
 
 /* Here is the section with the quotes*/
+
 .quote-section{
     display: flex;
     flex-direction: column;
     height: 400px;
     background-color: #E5E7EB;
     justify-content: center;
-    align-items: center;
-    padding-left: 400px;
-    padding-right: 400px;
+    align-items: center;  
+    min-height: 400px;
+    flex: 1;
+    
 }
+
+.quote-section-two{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
 .quote{
     font-style: italic;
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 300;     
 
 }
 .quoter{
-    margin-left: 450px;
+    align-self: flex-end;
+    max-width: 600px;
     font-weight: 500;
     font-size: 20px;
 }
